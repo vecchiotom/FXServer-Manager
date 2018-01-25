@@ -61,6 +61,7 @@ Partial Class Main
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -427,6 +428,7 @@ Partial Class Main
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel1.Controls.Add(Me.MaterialRaisedButton2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.TextBox7)
         Me.Panel1.Controls.Add(Me.MaterialLabel11)
@@ -446,7 +448,7 @@ Partial Class Main
         Me.MaterialLabel8.Depth = 0
         Me.MaterialLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.MaterialLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel8.Location = New System.Drawing.Point(59, 9)
+        Me.MaterialLabel8.Location = New System.Drawing.Point(130, 11)
         Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel8.Name = "MaterialLabel8"
         Me.MaterialLabel8.Size = New System.Drawing.Size(122, 18)
@@ -455,7 +457,7 @@ Partial Class Main
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(167, 52)
+        Me.TextBox5.Location = New System.Drawing.Point(167, 54)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(179, 20)
         Me.TextBox5.TabIndex = 1
@@ -475,7 +477,7 @@ Partial Class Main
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(167, 88)
+        Me.TextBox6.Location = New System.Drawing.Point(167, 128)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(179, 20)
         Me.TextBox6.TabIndex = 3
@@ -486,7 +488,7 @@ Partial Class Main
         Me.MaterialLabel10.Depth = 0
         Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel10.Location = New System.Drawing.Point(3, 89)
+        Me.MaterialLabel10.Location = New System.Drawing.Point(3, 127)
         Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel10.Name = "MaterialLabel10"
         Me.MaterialLabel10.Size = New System.Drawing.Size(76, 19)
@@ -499,7 +501,7 @@ Partial Class Main
         Me.MaterialLabel11.Depth = 0
         Me.MaterialLabel11.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel11.Location = New System.Drawing.Point(3, 125)
+        Me.MaterialLabel11.Location = New System.Drawing.Point(3, 223)
         Me.MaterialLabel11.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel11.Name = "MaterialLabel11"
         Me.MaterialLabel11.Size = New System.Drawing.Size(158, 19)
@@ -508,14 +510,14 @@ Partial Class Main
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(167, 126)
+        Me.TextBox7.Location = New System.Drawing.Point(167, 222)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(179, 20)
         Me.TextBox7.TabIndex = 6
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(352, 126)
+        Me.Button1.Location = New System.Drawing.Point(352, 223)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 20)
         Me.Button1.TabIndex = 7
@@ -525,6 +527,18 @@ Partial Class Main
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'MaterialRaisedButton2
+        '
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(68, 276)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton2.TabIndex = 8
+        Me.MaterialRaisedButton2.Text = "Install!"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
         '
         'Main
         '
@@ -588,4 +602,5 @@ Partial Class Main
     Friend WithEvents MaterialLabel8 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents Button1 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
 End Class

@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 
 Public Class FiveScratchParser
-    Public Shared Sub Parse(f As String, d As String)
+    Public Sub Parse(f As String, d As String)
         'Loop trough all the lines
         For Each Line As String In File.ReadLines(f)
             'check the command
