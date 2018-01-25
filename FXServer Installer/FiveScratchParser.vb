@@ -21,7 +21,7 @@ Public Class FiveScratchParser
                                 File.Delete(filename)
                             End If
 
-                            File.WriteAllText(filename, x + vbCrLf)
+                            File.AppendAllText(filename, x + vbCrLf)
 
                         Next
                     Catch ex As FileNotFoundException
@@ -47,7 +47,7 @@ Public Class FiveScratchParser
                                 File.Delete(filename)
                             End If
 
-                            File.WriteAllText(filename, x + vbCrLf)
+                            File.AppendAllText(filename, x + vbCrLf)
 
                         Next
                     Catch ex As FileNotFoundException
