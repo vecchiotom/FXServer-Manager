@@ -59,6 +59,8 @@ Partial Class Main
         Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -425,6 +427,7 @@ Partial Class Main
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.TextBox7)
         Me.Panel1.Controls.Add(Me.MaterialLabel11)
         Me.Panel1.Controls.Add(Me.MaterialLabel10)
@@ -452,7 +455,7 @@ Partial Class Main
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(203, 54)
+        Me.TextBox5.Location = New System.Drawing.Point(167, 52)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(179, 20)
         Me.TextBox5.TabIndex = 1
@@ -472,7 +475,7 @@ Partial Class Main
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(203, 90)
+        Me.TextBox6.Location = New System.Drawing.Point(167, 88)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(179, 20)
         Me.TextBox6.TabIndex = 3
@@ -505,10 +508,23 @@ Partial Class Main
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(203, 126)
+        Me.TextBox7.Location = New System.Drawing.Point(167, 126)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(179, 20)
         Me.TextBox7.TabIndex = 6
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(352, 126)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 20)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "..."
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Main
         '
@@ -570,4 +586,6 @@ Partial Class Main
     Friend WithEvents MaterialLabel9 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents MaterialLabel8 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
