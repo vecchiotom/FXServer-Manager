@@ -62,6 +62,10 @@ Partial Class Main
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton4 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton6 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -403,6 +407,10 @@ Partial Class Main
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.MaterialRaisedButton6)
+        Me.TabPage2.Controls.Add(Me.MaterialRaisedButton5)
+        Me.TabPage2.Controls.Add(Me.MaterialRaisedButton4)
+        Me.TabPage2.Controls.Add(Me.MaterialRaisedButton3)
         Me.TabPage2.Controls.Add(Me.Panel1)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
@@ -540,6 +548,54 @@ Partial Class Main
         Me.MaterialRaisedButton2.Text = "Install!"
         Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
         '
+        'MaterialRaisedButton3
+        '
+        Me.MaterialRaisedButton3.Depth = 0
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(455, 29)
+        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
+        Me.MaterialRaisedButton3.Primary = True
+        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton3.TabIndex = 9
+        Me.MaterialRaisedButton3.Text = "Delete Cache"
+        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton4
+        '
+        Me.MaterialRaisedButton4.Depth = 0
+        Me.MaterialRaisedButton4.Location = New System.Drawing.Point(455, 118)
+        Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton4.Name = "MaterialRaisedButton4"
+        Me.MaterialRaisedButton4.Primary = True
+        Me.MaterialRaisedButton4.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton4.TabIndex = 10
+        Me.MaterialRaisedButton4.Text = "Restart Server"
+        Me.MaterialRaisedButton4.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton5
+        '
+        Me.MaterialRaisedButton5.Depth = 0
+        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(455, 213)
+        Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
+        Me.MaterialRaisedButton5.Primary = True
+        Me.MaterialRaisedButton5.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton5.TabIndex = 11
+        Me.MaterialRaisedButton5.Text = "Stop Server"
+        Me.MaterialRaisedButton5.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton6
+        '
+        Me.MaterialRaisedButton6.Depth = 0
+        Me.MaterialRaisedButton6.Location = New System.Drawing.Point(455, 305)
+        Me.MaterialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton6.Name = "MaterialRaisedButton6"
+        Me.MaterialRaisedButton6.Primary = True
+        Me.MaterialRaisedButton6.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton6.TabIndex = 12
+        Me.MaterialRaisedButton6.Text = "Start Server"
+        Me.MaterialRaisedButton6.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -603,4 +659,8 @@ Partial Class Main
     Friend WithEvents Button1 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton6 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton5 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton4 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
 End Class
