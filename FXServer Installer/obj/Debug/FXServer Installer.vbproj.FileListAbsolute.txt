@@ -1,0 +1,17 @@
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\FXServer Installer.exe.config
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\FXServer Installer.exe
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\FXServer Installer.pdb
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\FXServer Installer.xml
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer_Installer.Resources.resources
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.vbproj.GenerateResource.Cache
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.vbproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.exe
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.xml
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.pdb
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer Installer.vbprojResolveAssemblyReference.cache
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\HtmlAgilityPack.dll
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\HtmlAgilityPack.pdb
+c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\HtmlAgilityPack.xml
+C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\MaterialSkin.dll
+C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer_Installer.Main.resources
+C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\Ionic.Zip.dll

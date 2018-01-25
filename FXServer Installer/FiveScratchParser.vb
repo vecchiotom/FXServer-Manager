@@ -12,9 +12,11 @@ Public Class FiveScratchParser
 
                         Dim filename As String = Path.Combine(d, s(1))
                         Dim l = Integer.Parse(s(2))
-                        Dim p1 As Integer = Integer.Parse(s(3)) + 1
-                        Dim d2 = File.ReadAllLines(p1).Concat(vbCrLf + Line.Replace("ADD" + filename + l + p1, ""))
-                        For Each x In d2
+                        Dim p1 As Integer = Integer.Parse(s(3)) - 1
+                        Dim d1 = File.ReadAllLines(filename)
+                        Dim d2 = d1(p1).Concat(vbCrLf + Line.Replace("ADD" + filename + l + p1, ""))
+                        d1(p1) = d2
+                        For Each x In d1
                             If File.Exists(filename) Then
                                 File.Delete(filename)
                             End If
@@ -37,9 +39,10 @@ Public Class FiveScratchParser
                         Dim filename As String = Path.Combine(d, s(1))
                         Dim l = Integer.Parse(s(2))
                         Dim p1 As Integer = Integer.Parse(s(3)) + 1
-                        Dim d2 = File.ReadAllLines(p1).Concat(vbCrLf + Line.Replace("ADD" + filename + l + p1, ""))
-
-                        For Each x In d2
+                        Dim d1 = File.ReadAllLines(filename)
+                        Dim d2 = Line.Replace("REPLACE" + filename + l + p1, "")
+                        d1(p1) = d2
+                        For Each x In d1
                             If File.Exists(filename) Then
                                 File.Delete(filename)
                             End If
