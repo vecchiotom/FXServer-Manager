@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.FXServer_Installer.Form1
+            Me.MainForm = Global.FXServer_Installer.Main
         End Sub
     End Class
 End Namespace
