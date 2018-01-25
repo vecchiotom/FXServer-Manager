@@ -47,7 +47,7 @@ Public Class Main
             Else
 
                 remoteUri = "https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/" + htmlNodes(i).Attributes("href").Value + "server.zip"
-
+                Exit For
 
             End If
         Next i
@@ -91,6 +91,14 @@ Public Class Main
             MessageBox.Show("Done")
         Catch ex As Exception
             MessageBox.Show("Error extracting archive.\n" + ex.Message)
+        End Try
+        Dim r As String = Path.Combine(Application.StartupPath, "r", "cfx-server-data-master", "resources")
+        Try
+            Directory.Move(r, Path.Combine(Application.StartupPath, "fivemserver"))
+
+        Catch ex As DirectoryNotFoundException
+            MsgBox("the program had an unexpected error, the resources directory wasn't found :/")
+            End
         End Try
     End Sub
 End Class
