@@ -42,7 +42,7 @@ Public Class Main
         doc.LoadHtml(result)
         Dim htmlNodes = doc.DocumentNode.SelectNodes("//pre/a")
         For i As Integer = htmlNodes.Count - 1 To 0 Step -1
-            If htmlNodes(i).Attributes("href").Value.IndexOf(ComboBox1.SelectedText + "-") = -1 Then
+            If htmlNodes(i).Attributes("href").Value.IndexOf(ComboBox1.Text + "-") = -1 Then
                 Continue For
             Else
 
@@ -94,11 +94,67 @@ Public Class Main
         End Try
         Dim r As String = Path.Combine(Application.StartupPath, "r", "cfx-server-data-master", "resources")
         Try
-            Directory.Move(r, Path.Combine(Application.StartupPath, "fivemserver"))
+            Directory.Move(r, Path.Combine(Application.StartupPath, "fivemserver\resources"))
 
         Catch ex As DirectoryNotFoundException
             MsgBox("the program had an unexpected error, the resources directory wasn't found :/")
             End
         End Try
+        Dim cfg As String = "# you probably don't want to change these!
+# only change them if you're using a server with multiple network interfaces
+endpoint_add_tcp " & ControlChars.Quote & "0.0.0.0:" & TextBox1.Text & ControlChars.Quote & "
+endpoint_add_udp  " & ControlChars.Quote & "0.0.0.0:" & TextBox1.Text & ControlChars.Quote & "
+
+start mapmanager
+start chat
+start spawnmanager
+start sessionmanager
+start fivem
+start hardcap
+start rconlog
+start scoreboard
+start playernames
+
+sv_scriptHookAllowed 1
+
+# change this
+#rcon_password " & TextBox3.Text & "
+
+sv_hostname " & ControlChars.Quote & TextBox2.Text & ControlChars.Quote & "
+
+# nested configs!
+#exec server_internal.cfg
+
+# loading a server icon (96x96 PNG file)
+#load_server_icon myLogo.png
+
+# convars for use from script
+set temp_convar " & ControlChars.Quote & "hey world!" & ControlChars.Quote & "
+
+# disable announcing? clear out the master by uncommenting this
+#sv_master1 " & ControlChars.Quote & ControlChars.Quote & "
+
+# want to only allow players authenticated with a third-party provider like Steam?
+#sv_authMaxVariance 1
+#sv_authMinTrust 5
+
+# add system admins
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_principal identifier.steam:110000112345678 group.admin # add the admin to the group
+
+# remove the # to hide player endpoints in external log output
+#sv_endpointprivacy true
+
+# server slots limit (must be between 1 and 31)
+sv_maxclients 30
+
+# license key for server (https://keymaster.fivem.net)
+sv_licenseKey " & TextBox4.Text
+        Dim parts As String() = cfg.Split(New String() {Environment.NewLine}, StringSplitOptions.None)
+        For Each part In parts
+            File.AppendAllText(Path.Combine(Application.StartupPath(), "fivemserver\server.cfg"), part + vbCrLf)
+
+        Next
     End Sub
 End Class
