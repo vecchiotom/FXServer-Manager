@@ -50,22 +50,23 @@ Partial Class Main
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.MaterialTabSelector1 = New MaterialSkin.Controls.MaterialTabSelector()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.MaterialLabel9 = New MaterialSkin.Controls.MaterialLabel()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton4 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton6 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton4 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.MaterialLabel9 = New MaterialSkin.Controls.MaterialLabel()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialTabSelector1 = New MaterialSkin.Controls.MaterialTabSelector()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -309,6 +310,7 @@ Partial Class Main
         '
         Me.MaterialCheckBox4.AutoSize = True
         Me.MaterialCheckBox4.Depth = 0
+        Me.MaterialCheckBox4.Enabled = False
         Me.MaterialCheckBox4.Font = New System.Drawing.Font("Roboto", 10.0!)
         Me.MaterialCheckBox4.Location = New System.Drawing.Point(58, 229)
         Me.MaterialCheckBox4.Margin = New System.Windows.Forms.Padding(0)
@@ -325,6 +327,7 @@ Partial Class Main
         '
         Me.MaterialCheckBox3.AutoSize = True
         Me.MaterialCheckBox3.Depth = 0
+        Me.MaterialCheckBox3.Enabled = False
         Me.MaterialCheckBox3.Font = New System.Drawing.Font("Roboto", 10.0!)
         Me.MaterialCheckBox3.Location = New System.Drawing.Point(58, 259)
         Me.MaterialCheckBox3.Margin = New System.Windows.Forms.Padding(0)
@@ -341,6 +344,7 @@ Partial Class Main
         '
         Me.MaterialCheckBox1.AutoSize = True
         Me.MaterialCheckBox1.Depth = 0
+        Me.MaterialCheckBox1.Enabled = False
         Me.MaterialCheckBox1.Font = New System.Drawing.Font("Roboto", 10.0!)
         Me.MaterialCheckBox1.Location = New System.Drawing.Point(58, 199)
         Me.MaterialCheckBox1.Margin = New System.Windows.Forms.Padding(0)
@@ -420,18 +424,53 @@ Partial Class Main
         Me.TabPage2.Text = "Manager"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'MaterialTabSelector1
+        'MaterialRaisedButton6
         '
-        Me.MaterialTabSelector1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MaterialTabSelector1.BaseTabControl = Me.MaterialTabControl1
-        Me.MaterialTabSelector1.Depth = 0
-        Me.MaterialTabSelector1.Location = New System.Drawing.Point(-4, 63)
-        Me.MaterialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialTabSelector1.Name = "MaterialTabSelector1"
-        Me.MaterialTabSelector1.Size = New System.Drawing.Size(730, 41)
-        Me.MaterialTabSelector1.TabIndex = 27
-        Me.MaterialTabSelector1.Text = "MaterialTabSelector1"
+        Me.MaterialRaisedButton6.Depth = 0
+        Me.MaterialRaisedButton6.Location = New System.Drawing.Point(455, 305)
+        Me.MaterialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton6.Name = "MaterialRaisedButton6"
+        Me.MaterialRaisedButton6.Primary = True
+        Me.MaterialRaisedButton6.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton6.TabIndex = 12
+        Me.MaterialRaisedButton6.Text = "Start Server"
+        Me.MaterialRaisedButton6.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton5
+        '
+        Me.MaterialRaisedButton5.Depth = 0
+        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(455, 213)
+        Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
+        Me.MaterialRaisedButton5.Primary = True
+        Me.MaterialRaisedButton5.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton5.TabIndex = 11
+        Me.MaterialRaisedButton5.Text = "Stop Server"
+        Me.MaterialRaisedButton5.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton4
+        '
+        Me.MaterialRaisedButton4.Depth = 0
+        Me.MaterialRaisedButton4.Location = New System.Drawing.Point(455, 118)
+        Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton4.Name = "MaterialRaisedButton4"
+        Me.MaterialRaisedButton4.Primary = True
+        Me.MaterialRaisedButton4.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton4.TabIndex = 10
+        Me.MaterialRaisedButton4.Text = "Restart Server"
+        Me.MaterialRaisedButton4.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton3
+        '
+        Me.MaterialRaisedButton3.Depth = 0
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(455, 29)
+        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
+        Me.MaterialRaisedButton3.Primary = True
+        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton3.TabIndex = 9
+        Me.MaterialRaisedButton3.Text = "Delete Cache"
+        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -450,58 +489,34 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(385, 358)
         Me.Panel1.TabIndex = 0
         '
-        'MaterialLabel8
+        'MaterialRaisedButton2
         '
-        Me.MaterialLabel8.AutoSize = True
-        Me.MaterialLabel8.Depth = 0
-        Me.MaterialLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
-        Me.MaterialLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel8.Location = New System.Drawing.Point(130, 11)
-        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel8.Name = "MaterialLabel8"
-        Me.MaterialLabel8.Size = New System.Drawing.Size(122, 18)
-        Me.MaterialLabel8.TabIndex = 0
-        Me.MaterialLabel8.Text = "Install Resources"
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Enabled = False
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(68, 276)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(243, 59)
+        Me.MaterialRaisedButton2.TabIndex = 8
+        Me.MaterialRaisedButton2.Text = "Install!"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
         '
-        'TextBox5
+        'Button1
         '
-        Me.TextBox5.Location = New System.Drawing.Point(167, 54)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox5.TabIndex = 1
+        Me.Button1.Location = New System.Drawing.Point(352, 223)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(30, 20)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "..."
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'MaterialLabel9
+        'TextBox7
         '
-        Me.MaterialLabel9.AutoSize = True
-        Me.MaterialLabel9.Depth = 0
-        Me.MaterialLabel9.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel9.Location = New System.Drawing.Point(3, 53)
-        Me.MaterialLabel9.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel9.Name = "MaterialLabel9"
-        Me.MaterialLabel9.Size = New System.Drawing.Size(49, 19)
-        Me.MaterialLabel9.TabIndex = 2
-        Me.MaterialLabel9.Text = "Name"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(167, 128)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox6.TabIndex = 3
-        '
-        'MaterialLabel10
-        '
-        Me.MaterialLabel10.AutoSize = True
-        Me.MaterialLabel10.Depth = 0
-        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel10.Location = New System.Drawing.Point(3, 127)
-        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel10.Name = "MaterialLabel10"
-        Me.MaterialLabel10.Size = New System.Drawing.Size(76, 19)
-        Me.MaterialLabel10.TabIndex = 4
-        Me.MaterialLabel10.Text = "Download"
+        Me.TextBox7.Location = New System.Drawing.Point(167, 222)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(179, 20)
+        Me.TextBox7.TabIndex = 6
         '
         'MaterialLabel11
         '
@@ -516,85 +531,78 @@ Partial Class Main
         Me.MaterialLabel11.TabIndex = 5
         Me.MaterialLabel11.Text = "Installation File(if any)"
         '
-        'TextBox7
+        'MaterialLabel10
         '
-        Me.TextBox7.Location = New System.Drawing.Point(167, 222)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(179, 20)
-        Me.TextBox7.TabIndex = 6
+        Me.MaterialLabel10.AutoSize = True
+        Me.MaterialLabel10.Depth = 0
+        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel10.Location = New System.Drawing.Point(3, 127)
+        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel10.Name = "MaterialLabel10"
+        Me.MaterialLabel10.Size = New System.Drawing.Size(76, 19)
+        Me.MaterialLabel10.TabIndex = 4
+        Me.MaterialLabel10.Text = "Download"
         '
-        'Button1
+        'TextBox6
         '
-        Me.Button1.Location = New System.Drawing.Point(352, 223)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(30, 20)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "..."
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBox6.Location = New System.Drawing.Point(167, 128)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(179, 20)
+        Me.TextBox6.TabIndex = 3
+        '
+        'MaterialLabel9
+        '
+        Me.MaterialLabel9.AutoSize = True
+        Me.MaterialLabel9.Depth = 0
+        Me.MaterialLabel9.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel9.Location = New System.Drawing.Point(3, 53)
+        Me.MaterialLabel9.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel9.Name = "MaterialLabel9"
+        Me.MaterialLabel9.Size = New System.Drawing.Size(49, 19)
+        Me.MaterialLabel9.TabIndex = 2
+        Me.MaterialLabel9.Text = "Name"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(167, 54)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(179, 20)
+        Me.TextBox5.TabIndex = 1
+        '
+        'MaterialLabel8
+        '
+        Me.MaterialLabel8.AutoSize = True
+        Me.MaterialLabel8.Depth = 0
+        Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel8.Location = New System.Drawing.Point(130, 11)
+        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel8.Name = "MaterialLabel8"
+        Me.MaterialLabel8.Size = New System.Drawing.Size(125, 19)
+        Me.MaterialLabel8.TabIndex = 0
+        Me.MaterialLabel8.Text = "Install Resources"
+        '
+        'MaterialTabSelector1
+        '
+        Me.MaterialTabSelector1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MaterialTabSelector1.BaseTabControl = Me.MaterialTabControl1
+        Me.MaterialTabSelector1.Depth = 0
+        Me.MaterialTabSelector1.Location = New System.Drawing.Point(-4, 63)
+        Me.MaterialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialTabSelector1.Name = "MaterialTabSelector1"
+        Me.MaterialTabSelector1.Size = New System.Drawing.Size(730, 41)
+        Me.MaterialTabSelector1.TabIndex = 27
+        Me.MaterialTabSelector1.Text = "MaterialTabSelector1"
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'MaterialRaisedButton2
+        'BackgroundWorker1
         '
-        Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(68, 276)
-        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
-        Me.MaterialRaisedButton2.Primary = True
-        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(243, 59)
-        Me.MaterialRaisedButton2.TabIndex = 8
-        Me.MaterialRaisedButton2.Text = "Install!"
-        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton3
-        '
-        Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(455, 29)
-        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
-        Me.MaterialRaisedButton3.Primary = True
-        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(243, 59)
-        Me.MaterialRaisedButton3.TabIndex = 9
-        Me.MaterialRaisedButton3.Text = "Delete Cache"
-        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton4
-        '
-        Me.MaterialRaisedButton4.Depth = 0
-        Me.MaterialRaisedButton4.Location = New System.Drawing.Point(455, 118)
-        Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton4.Name = "MaterialRaisedButton4"
-        Me.MaterialRaisedButton4.Primary = True
-        Me.MaterialRaisedButton4.Size = New System.Drawing.Size(243, 59)
-        Me.MaterialRaisedButton4.TabIndex = 10
-        Me.MaterialRaisedButton4.Text = "Restart Server"
-        Me.MaterialRaisedButton4.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton5
-        '
-        Me.MaterialRaisedButton5.Depth = 0
-        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(455, 213)
-        Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
-        Me.MaterialRaisedButton5.Primary = True
-        Me.MaterialRaisedButton5.Size = New System.Drawing.Size(243, 59)
-        Me.MaterialRaisedButton5.TabIndex = 11
-        Me.MaterialRaisedButton5.Text = "Stop Server"
-        Me.MaterialRaisedButton5.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton6
-        '
-        Me.MaterialRaisedButton6.Depth = 0
-        Me.MaterialRaisedButton6.Location = New System.Drawing.Point(455, 305)
-        Me.MaterialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton6.Name = "MaterialRaisedButton6"
-        Me.MaterialRaisedButton6.Primary = True
-        Me.MaterialRaisedButton6.Size = New System.Drawing.Size(243, 59)
-        Me.MaterialRaisedButton6.TabIndex = 12
-        Me.MaterialRaisedButton6.Text = "Start Server"
-        Me.MaterialRaisedButton6.UseVisualStyleBackColor = True
         '
         'Main
         '
@@ -663,4 +671,5 @@ Partial Class Main
     Friend WithEvents MaterialRaisedButton5 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton4 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
