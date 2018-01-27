@@ -15,3 +15,4 @@ c:\users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\Html
 C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\MaterialSkin.dll
 C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer_Installer.Main.resources
 C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\bin\Debug\Ionic.Zip.dll
+C:\Users\admin\source\repos\FXServer Installer\FXServer Installer\obj\Debug\FXServer_Installer.log.resources
